@@ -17,4 +17,15 @@
 # that is, a price of 20 should display as "$20.00"
 # and a price of 33.8 should display as "$33.80".
 class BookInStock
+	attr_accessor :isbn, :price
+
+	def initialize(isbn, price)
+    @isbn, @price = isbn, price
+     raise ArgumentError if @isbn == nil or @price <= 0
+  	end
+
+  def price_as_string
+  	sprintf("$%.2f", @price)
+  end
+
 end

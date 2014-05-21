@@ -62,4 +62,3 @@ class TestPriceAsString < MiniTest::Unit::TestCase
     assert_equal "$149.96", @book.price_as_string
   end
 end
-

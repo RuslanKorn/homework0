@@ -13,9 +13,9 @@ end
 # For an array with just one element,
 # it should return that element.
 def max_2_sum(array)
-	max_sum = nil
+  max_sum = 0
   array.sort!
-  array.length > 1 ? max_sum = array[-1] + array[-2] : max_sum = array[0]
+  array.length > 1 ? max_sum = array[-1] + array[-2] : max_sum = array[0] if !array.empty?
   max_sum
 end
 

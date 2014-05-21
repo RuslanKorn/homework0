@@ -2,7 +2,9 @@
 # and returns the sum of its elements.
 # For an empty array it should return zero.
 def sum(array)
-  raise "Not yet implemented"
+  sum = 0
+  array.map { |x| sum += x }
+  sum
 end
 
 # Takes an array of integers as an argument
@@ -11,7 +13,10 @@ end
 # For an array with just one element,
 # it should return that element.
 def max_2_sum(array)
-  raise "Not yet implemented"
+	max_sum = nil
+  array.sort!
+  array.length > 1 ? max_sum = array[-1] + array[-2] : max_sum = array[0]
+  max_sum
 end
 
 # DIFFICULT

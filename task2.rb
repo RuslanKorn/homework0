@@ -21,5 +21,10 @@ end
 # that is a multiple of 4.
 # NOTE: be sure it returns false if the string is not a valid binary number!
 def binary_multiple_of_4?(str)
-  raise "Not yet implemented"
+	@str = str
+ 	 multiple_four = false
+	if(@str.to_i(2) % 4 == 0)
+  		multiple_four = true if !@str.to_i.zero?
+	end
+	multiple_four
 end

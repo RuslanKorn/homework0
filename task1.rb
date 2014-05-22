@@ -26,7 +26,6 @@ end
 # if any two elements in the array of integers sum to n.
 # An empty array should sum to zero by definition.
 def sum_to_n?(array, n)
-  sum = 0
   ret = false
   k, i = 1, 0
   if !array.empty?
@@ -40,10 +39,10 @@ def sum_to_n?(array, n)
           k += 1
         end
         i += 1
-        k=i
+        k = i
       end
     end
-  elsif n ==0
+  elsif n == 0
     ret = true
   end
   ret

@@ -39,7 +39,7 @@ def sum_to_n?(array, n)
           k += 1
         end
         i += 1
-        k = i
+        k = i + 1
       end
     end
   elsif n == 0

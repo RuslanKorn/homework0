@@ -12,8 +12,8 @@ end
 # (For our purposes, a vowel is any of the A, E, I, O, U)
 # NOTE: be sure it works for both upper and lower case and for nonletters!
 def starts_with_vowel?(str)
-	@str = str
-	!@str.scan(/^(A|E|I|O|U)/i).empty?
+  @str = str
+  !@str.scan(/^(A|E|I|O|U)/i).empty?
 end
 
 # Takes a string
@@ -21,10 +21,10 @@ end
 # that is a multiple of 4.
 # NOTE: be sure it returns false if the string is not a valid binary number!
 def binary_multiple_of_4?(str)
-	@str = str
- 	 multiple_four = false
-	if(@str.to_i(2) % 4 == 0)
-  		multiple_four = true if !@str.to_i.zero?
-	end
-	multiple_four
+  @str = str
+  multiple_four = false
+  if (@str.to_i(2) % 4 == 0)
+    multiple_four = true if !@str.to_i.zero?
+  end
+  multiple_four
 end

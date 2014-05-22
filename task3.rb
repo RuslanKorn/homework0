@@ -21,7 +21,7 @@ class BookInStock
 
 	def initialize(isbn, price)
     @isbn, @price = isbn, price
-     raise ArgumentError if @isbn == nil or @price <= 0
+     raise ArgumentError if (@isbn == nil or @isbn.empty? or @price == nil or @price <= 0)
   	end
 
   def price_as_string

@@ -18,7 +18,6 @@
 # and a price of 33.8 should display as "$33.80".
 class BookInStock
 	attr_accessor :isbn, :price
-	attr_writer :isbn
 
   def initialize(isbn, price)
     @isbn, @price = isbn, price
